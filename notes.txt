@@ -1,0 +1,1 @@
+https://www.pythian.com/blog/technical-track/cassandra-consistency-level-guide
