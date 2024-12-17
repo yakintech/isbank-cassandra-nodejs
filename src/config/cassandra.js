@@ -9,7 +9,7 @@ const sslOptions = {
 
 
 const cassandraClient = new cassandra.Client({
-    contactPoints:process.env.CASSANDRA_CONTACT_POINTS.split(','),
+    contactPoints: [process.env.CASSANDRA_CONTACT_POINTS],
     localDataCenter: 'West US 2',
     authProvider: new cassandra.auth.PlainTextAuthProvider(process.env.CASSANDRA_USER_NAME , process.env.CASSANDRA_PASSWORD),
     sslOptions: sslOptions,
